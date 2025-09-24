@@ -1,20 +1,17 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import Nav from './components/NavComponent.vue'
+import Hero from './components/HeroSection.vue'
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
+  <body class="fixed top-0 left-0 w-screen min-h-screen flex flex-col overflow-x-hidden z-50">
 
-  <main>
-    <TheWelcome />
-  </main>
+    <Nav />
+    <Hero />
+    <img src="/cap.png" alt="" class="w-[86px] h-15 absolute z-10 top-[123px]">
+    <img src="/bottle.png" alt="" class="w-30 h-106 absolute z-10 top-[499px]">
+  </body>
 </template>
 
 <style scoped>
